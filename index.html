@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!-- Embed custom font from google font -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
-
-
-
-
-
 
 <style>
 // <uniquifier>: Use a uniquifier for the class name
@@ -17,28 +15,24 @@
   font-family: "League Spartan", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
-  font-style: normal;
-}
+  font-style: normal;}
 
 /* general styling */
 :root {
-  --smaller: .75;
-}
+  --smaller: .75;}
 
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
-}
+  padding: 0;}
 
 html, body {
   height: 100%;
-  margin: 0;
-}
+  margin: 0;}
 
 body {
   align-items: center;
-  background-color: #f5f4eb;
+  background-color: #fbecdd;
   display: flex;
   font-family: -apple-system, 
     BlinkMacSystemFont, 
@@ -48,60 +42,37 @@ body {
     Ubuntu, 
     Cantarell, 
     "Helvetica Neue", 
-    sans-serif;
-}
+    sans-serif;}
 
 .container {
   color: #333;
   margin: 0 auto;
   text-align: center;
-}
-
-#days{
-  font-size: 5em;
-  font-family: 'League Spartan';
-  font-style: bold;
-}
-
-
-h1 {
-  font-weight: normal;
-  letter-spacing: .125rem;
-  font-style: italic;
-  font-size: 0.95em;
-}
 
 li {
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 1rem;
+  letter-spacing: .4rem;
   list-style-type: none;
   padding: 1em;
-  text-transform: uppercase;
-}
+  text-transform: uppercase;}
 
 li span {
   display: block;
-  font-size: 4.5rem;
-}
+  font-size: 6rem;
+  letter-spacing: .5rem;
+  font-family: 'League Spartan';
+  font-style: bold;}
 
-.emoji span {
-  font-size: 4rem;
-  padding: 0 .5rem;
-}
+h1 {
+  font-weight: normal;
+  letter-spacing: .125em;
+  background-color: #333;
+  color: #fbecdd;
+  font-style: italic;
+  padding: 0.5rem;
+  font-size: 0.8rem;}
 
-@media all and (max-width: 768px) {
-  h1 {
-    font-size: calc(1.5rem * var(--smaller));
-  }
-  
-  li {
-    font-size: calc(1.125rem * var(--smaller));
-  }
-  
-  li span {
-    font-size: calc(3.375rem * var(--smaller));
-  }
-}
 </style>
 
 
@@ -111,19 +82,14 @@ li span {
 </head>
 <body>
 
-
-
-
-
-
 <div class="container">
   
   <div id="countdown">
     <ul>
-      <li><span id="days"></span>days</li>
+      <li><span id="days"></span>more days</li>
     </ul>
+    <h1 id="headline">Till the end of the year</h1>
   </div>
-  <h1 id="headline">till the end of the year</h1>
 </div>
 
 
@@ -177,4 +143,4 @@ li span {
 </script>
 
 </body>
-</html> 
+</html>
